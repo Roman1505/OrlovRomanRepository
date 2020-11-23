@@ -1,0 +1,13 @@
+D:\OrlovRomanRepository\EqualsToStringGeneric\EqualsToStringGeneric\bin\Debug\netcoreapp3.1\EqualsToStringGeneric.exe
+D:\OrlovRomanRepository\EqualsToStringGeneric\EqualsToStringGeneric\bin\Debug\netcoreapp3.1\EqualsToStringGeneric.deps.json
+D:\OrlovRomanRepository\EqualsToStringGeneric\EqualsToStringGeneric\bin\Debug\netcoreapp3.1\EqualsToStringGeneric.runtimeconfig.json
+D:\OrlovRomanRepository\EqualsToStringGeneric\EqualsToStringGeneric\bin\Debug\netcoreapp3.1\EqualsToStringGeneric.runtimeconfig.dev.json
+D:\OrlovRomanRepository\EqualsToStringGeneric\EqualsToStringGeneric\bin\Debug\netcoreapp3.1\EqualsToStringGeneric.dll
+D:\OrlovRomanRepository\EqualsToStringGeneric\EqualsToStringGeneric\bin\Debug\netcoreapp3.1\EqualsToStringGeneric.pdb
+D:\OrlovRomanRepository\EqualsToStringGeneric\EqualsToStringGeneric\obj\Debug\netcoreapp3.1\EqualsToStringGeneric.csprojAssemblyReference.cache
+D:\OrlovRomanRepository\EqualsToStringGeneric\EqualsToStringGeneric\obj\Debug\netcoreapp3.1\EqualsToStringGeneric.AssemblyInfoInputs.cache
+D:\OrlovRomanRepository\EqualsToStringGeneric\EqualsToStringGeneric\obj\Debug\netcoreapp3.1\EqualsToStringGeneric.AssemblyInfo.cs
+D:\OrlovRomanRepository\EqualsToStringGeneric\EqualsToStringGeneric\obj\Debug\netcoreapp3.1\EqualsToStringGeneric.csproj.CoreCompileInputs.cache
+D:\OrlovRomanRepository\EqualsToStringGeneric\EqualsToStringGeneric\obj\Debug\netcoreapp3.1\EqualsToStringGeneric.dll
+D:\OrlovRomanRepository\EqualsToStringGeneric\EqualsToStringGeneric\obj\Debug\netcoreapp3.1\EqualsToStringGeneric.pdb
+D:\OrlovRomanRepository\EqualsToStringGeneric\EqualsToStringGeneric\obj\Debug\netcoreapp3.1\EqualsToStringGeneric.genruntimeconfig.cache
