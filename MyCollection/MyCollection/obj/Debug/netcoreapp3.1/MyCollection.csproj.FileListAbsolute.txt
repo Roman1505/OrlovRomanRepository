@@ -1,0 +1,13 @@
+D:\OrlovRomanRepository\MyCollection\MyCollection\bin\Debug\netcoreapp3.1\MyCollection.exe
+D:\OrlovRomanRepository\MyCollection\MyCollection\bin\Debug\netcoreapp3.1\MyCollection.deps.json
+D:\OrlovRomanRepository\MyCollection\MyCollection\bin\Debug\netcoreapp3.1\MyCollection.runtimeconfig.json
+D:\OrlovRomanRepository\MyCollection\MyCollection\bin\Debug\netcoreapp3.1\MyCollection.runtimeconfig.dev.json
+D:\OrlovRomanRepository\MyCollection\MyCollection\bin\Debug\netcoreapp3.1\MyCollection.dll
+D:\OrlovRomanRepository\MyCollection\MyCollection\bin\Debug\netcoreapp3.1\MyCollection.pdb
+D:\OrlovRomanRepository\MyCollection\MyCollection\obj\Debug\netcoreapp3.1\MyCollection.csprojAssemblyReference.cache
+D:\OrlovRomanRepository\MyCollection\MyCollection\obj\Debug\netcoreapp3.1\MyCollection.AssemblyInfoInputs.cache
+D:\OrlovRomanRepository\MyCollection\MyCollection\obj\Debug\netcoreapp3.1\MyCollection.AssemblyInfo.cs
+D:\OrlovRomanRepository\MyCollection\MyCollection\obj\Debug\netcoreapp3.1\MyCollection.csproj.CoreCompileInputs.cache
+D:\OrlovRomanRepository\MyCollection\MyCollection\obj\Debug\netcoreapp3.1\MyCollection.dll
+D:\OrlovRomanRepository\MyCollection\MyCollection\obj\Debug\netcoreapp3.1\MyCollection.pdb
+D:\OrlovRomanRepository\MyCollection\MyCollection\obj\Debug\netcoreapp3.1\MyCollection.genruntimeconfig.cache
