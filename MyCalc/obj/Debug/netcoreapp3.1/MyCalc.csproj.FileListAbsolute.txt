@@ -1,0 +1,13 @@
+C:\Users\Андрей\source\repos\MyTasks\MyCalc\bin\Debug\netcoreapp3.1\MyCalc.exe
+C:\Users\Андрей\source\repos\MyTasks\MyCalc\bin\Debug\netcoreapp3.1\MyCalc.deps.json
+C:\Users\Андрей\source\repos\MyTasks\MyCalc\bin\Debug\netcoreapp3.1\MyCalc.runtimeconfig.json
+C:\Users\Андрей\source\repos\MyTasks\MyCalc\bin\Debug\netcoreapp3.1\MyCalc.runtimeconfig.dev.json
+C:\Users\Андрей\source\repos\MyTasks\MyCalc\bin\Debug\netcoreapp3.1\MyCalc.dll
+C:\Users\Андрей\source\repos\MyTasks\MyCalc\bin\Debug\netcoreapp3.1\MyCalc.pdb
+C:\Users\Андрей\source\repos\MyTasks\MyCalc\obj\Debug\netcoreapp3.1\MyCalc.csprojAssemblyReference.cache
+C:\Users\Андрей\source\repos\MyTasks\MyCalc\obj\Debug\netcoreapp3.1\MyCalc.AssemblyInfoInputs.cache
+C:\Users\Андрей\source\repos\MyTasks\MyCalc\obj\Debug\netcoreapp3.1\MyCalc.AssemblyInfo.cs
+C:\Users\Андрей\source\repos\MyTasks\MyCalc\obj\Debug\netcoreapp3.1\MyCalc.csproj.CoreCompileInputs.cache
+C:\Users\Андрей\source\repos\MyTasks\MyCalc\obj\Debug\netcoreapp3.1\MyCalc.dll
+C:\Users\Андрей\source\repos\MyTasks\MyCalc\obj\Debug\netcoreapp3.1\MyCalc.pdb
+C:\Users\Андрей\source\repos\MyTasks\MyCalc\obj\Debug\netcoreapp3.1\MyCalc.genruntimeconfig.cache
