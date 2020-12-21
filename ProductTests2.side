@@ -1,0 +1,633 @@
+{
+  "id": "3692f450-0a9b-47b6-a5b0-0c27f6ffbec8",
+  "version": "2.0",
+  "name": "ProductTests",
+  "url": "http://localhost:5000/Account/Login?ReturnUrl=%2F",
+  "tests": [{
+    "id": "bdbcf283-a552-4fc8-a433-4f8bc93f33d7",
+    "name": "CreateProductTest",
+    "commands": [{
+      "id": "817844f8-f324-4832-b092-4870435f6e31",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost:5000/Product",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "05f8fda0-aeb0-4efe-9a02-f24c106433a7",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1004x580",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "51bbfa22-f398-43d4-af97-d80e9f3f5e2b",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Create new",
+      "targets": [
+        ["linkText=Create new", "linkText"],
+        ["css=.btn", "css:finder"],
+        ["xpath=//a[contains(text(),'Create new')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/Product/Create')]", "xpath:href"],
+        ["xpath=//div[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Create new')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "84257039-6bf5-41ff-a837-08c22c9abba6",
+      "comment": "",
+      "command": "click",
+      "target": "id=ProductName",
+      "targets": [
+        ["id=ProductName", "id"],
+        ["name=ProductName", "name"],
+        ["css=#ProductName", "css:finder"],
+        ["xpath=//input[@id='ProductName']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "125f3a1f-f91e-48e5-af74-510553929e9e",
+      "comment": "",
+      "command": "type",
+      "target": "id=ProductName",
+      "targets": [
+        ["id=ProductName", "id"],
+        ["name=ProductName", "name"],
+        ["css=#ProductName", "css:finder"],
+        ["xpath=//input[@id='ProductName']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "Juice"
+    }, {
+      "id": "728c040a-b5bb-4d60-8e12-bfea898077db",
+      "comment": "",
+      "command": "click",
+      "target": "id=CategoryId",
+      "targets": [
+        ["id=CategoryId", "id"],
+        ["name=CategoryId", "name"],
+        ["css=#CategoryId", "css:finder"],
+        ["xpath=//select[@id='CategoryId']", "xpath:attributes"],
+        ["xpath=//select", "xpath:position"],
+        ["xpath=//select[contains(.,'Beverages\nCondiments\nConfections\nDairy Products\nGrains/Cereals\nMeat/Poultry\nProduce\nSeafood')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "d435220c-3b77-4743-a927-f67196814a29",
+      "comment": "",
+      "command": "select",
+      "target": "id=CategoryId",
+      "targets": [],
+      "value": "label=Beverages"
+    }, {
+      "id": "2d9181ca-5f1b-4984-9795-ff9c601ce847",
+      "comment": "",
+      "command": "click",
+      "target": "id=CategoryId",
+      "targets": [
+        ["id=CategoryId", "id"],
+        ["name=CategoryId", "name"],
+        ["css=#CategoryId", "css:finder"],
+        ["xpath=//select[@id='CategoryId']", "xpath:attributes"],
+        ["xpath=//select", "xpath:position"],
+        ["xpath=//select[contains(.,'Beverages\nCondiments\nConfections\nDairy Products\nGrains/Cereals\nMeat/Poultry\nProduce\nSeafood')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "06b83e69-2212-49a5-97a5-3d1092c1baf3",
+      "comment": "",
+      "command": "click",
+      "target": "id=SupplierId",
+      "targets": [
+        ["id=SupplierId", "id"],
+        ["name=SupplierId", "name"],
+        ["css=#SupplierId", "css:finder"],
+        ["xpath=//select[@id='SupplierId']", "xpath:attributes"],
+        ["xpath=//div[3]/div/select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "73418e24-ea72-4b87-8756-4d0184934445",
+      "comment": "",
+      "command": "select",
+      "target": "id=SupplierId",
+      "targets": [],
+      "value": "label=Exotic Liquids"
+    }, {
+      "id": "cc916f8f-b6d2-4a9e-8daa-631efff6d6c9",
+      "comment": "",
+      "command": "click",
+      "target": "id=SupplierId",
+      "targets": [
+        ["id=SupplierId", "id"],
+        ["name=SupplierId", "name"],
+        ["css=#SupplierId", "css:finder"],
+        ["xpath=//select[@id='SupplierId']", "xpath:attributes"],
+        ["xpath=//div[3]/div/select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d1acf92b-a357-44b3-a690-632fd1df7672",
+      "comment": "",
+      "command": "click",
+      "target": "id=UnitPrice",
+      "targets": [
+        ["id=UnitPrice", "id"],
+        ["name=UnitPrice", "name"],
+        ["css=#UnitPrice", "css:finder"],
+        ["xpath=//input[@id='UnitPrice']", "xpath:attributes"],
+        ["xpath=//div[4]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "834bc6c6-7da4-42d0-b98f-ed5650b19a9e",
+      "comment": "",
+      "command": "type",
+      "target": "id=UnitPrice",
+      "targets": [
+        ["id=UnitPrice", "id"],
+        ["name=UnitPrice", "name"],
+        ["css=#UnitPrice", "css:finder"],
+        ["xpath=//input[@id='UnitPrice']", "xpath:attributes"],
+        ["xpath=//div[4]/div/input", "xpath:position"]
+      ],
+      "value": "20"
+    }, {
+      "id": "2b439794-0fab-4fa0-aba8-e7f84dec4b1d",
+      "comment": "",
+      "command": "click",
+      "target": "id=QuantityPerUnit",
+      "targets": [
+        ["id=QuantityPerUnit", "id"],
+        ["name=QuantityPerUnit", "name"],
+        ["css=#QuantityPerUnit", "css:finder"],
+        ["xpath=//input[@id='QuantityPerUnit']", "xpath:attributes"],
+        ["xpath=//div[5]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b9aa14f4-25f6-4e0a-ae3c-64371116609b",
+      "comment": "",
+      "command": "type",
+      "target": "id=QuantityPerUnit",
+      "targets": [
+        ["id=QuantityPerUnit", "id"],
+        ["name=QuantityPerUnit", "name"],
+        ["css=#QuantityPerUnit", "css:finder"],
+        ["xpath=//input[@id='QuantityPerUnit']", "xpath:attributes"],
+        ["xpath=//div[5]/div/input", "xpath:position"]
+      ],
+      "value": "24 - 12 oz bottles"
+    }, {
+      "id": "4e21056f-4fce-4e7d-84f0-8129744bd937",
+      "comment": "",
+      "command": "click",
+      "target": "id=UnitsInStock",
+      "targets": [
+        ["id=UnitsInStock", "id"],
+        ["name=UnitsInStock", "name"],
+        ["css=#UnitsInStock", "css:finder"],
+        ["xpath=//input[@id='UnitsInStock']", "xpath:attributes"],
+        ["xpath=//div[6]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "fe9fc018-f303-41a6-b3dd-b19ff3c91a02",
+      "comment": "",
+      "command": "type",
+      "target": "id=UnitsInStock",
+      "targets": [
+        ["id=UnitsInStock", "id"],
+        ["name=UnitsInStock", "name"],
+        ["css=#UnitsInStock", "css:finder"],
+        ["xpath=//input[@id='UnitsInStock']", "xpath:attributes"],
+        ["xpath=//div[6]/div/input", "xpath:position"]
+      ],
+      "value": "17"
+    }, {
+      "id": "e0cd12e3-c557-4695-9b92-ca77d2973efb",
+      "comment": "",
+      "command": "click",
+      "target": "id=UnitsOnOrder",
+      "targets": [
+        ["id=UnitsOnOrder", "id"],
+        ["name=UnitsOnOrder", "name"],
+        ["css=#UnitsOnOrder", "css:finder"],
+        ["xpath=//input[@id='UnitsOnOrder']", "xpath:attributes"],
+        ["xpath=//div[7]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ff97e860-e528-42ee-9761-3653391f6fd7",
+      "comment": "",
+      "command": "type",
+      "target": "id=UnitsOnOrder",
+      "targets": [
+        ["id=UnitsOnOrder", "id"],
+        ["name=UnitsOnOrder", "name"],
+        ["css=#UnitsOnOrder", "css:finder"],
+        ["xpath=//input[@id='UnitsOnOrder']", "xpath:attributes"],
+        ["xpath=//div[7]/div/input", "xpath:position"]
+      ],
+      "value": "0"
+    }, {
+      "id": "7004dd8c-36a1-4b6d-914b-732e0c36f0a1",
+      "comment": "",
+      "command": "click",
+      "target": "id=ReorderLevel",
+      "targets": [
+        ["id=ReorderLevel", "id"],
+        ["name=ReorderLevel", "name"],
+        ["css=#ReorderLevel", "css:finder"],
+        ["xpath=//input[@id='ReorderLevel']", "xpath:attributes"],
+        ["xpath=//div[8]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "cf5c1ef3-354d-4afb-ab19-18eacf9124c9",
+      "comment": "",
+      "command": "type",
+      "target": "id=ReorderLevel",
+      "targets": [
+        ["id=ReorderLevel", "id"],
+        ["name=ReorderLevel", "name"],
+        ["css=#ReorderLevel", "css:finder"],
+        ["xpath=//input[@id='ReorderLevel']", "xpath:attributes"],
+        ["xpath=//div[8]/div/input", "xpath:position"]
+      ],
+      "value": "0"
+    }, {
+      "id": "4cb4b576-6a29-4b6b-9de2-184710507a8c",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn",
+      "targets": [
+        ["css=.btn", "css:finder"],
+        ["xpath=//input[@type='submit']", "xpath:attributes"],
+        ["xpath=//form/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "7b3aa638-edfb-4e71-a8a1-c87f24fea4a8",
+      "comment": "",
+      "command": "assertElementNotPresent",
+      "target": "//h2[contains(text(), 'Product editing')]",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "32f76e76-712f-4ce4-ab2b-d1dc3f0e6510",
+    "name": "DeleteProductTest",
+    "commands": [{
+      "id": "8d215ae9-e428-4f0e-8726-243680836fdd",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost:5000/Product",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "56b47932-5b01-4d87-8d24-43f7b99394d5",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1004x580",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "31c8afbe-8b73-4ba6-b5c5-1e0628e163b1",
+      "comment": "",
+      "command": "chooseOkOnNextConfirmation",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ef676aea-c295-4d81-8a5c-08093c187aa8",
+      "comment": "",
+      "command": "click",
+      "target": "css=tr:nth-child(79) > td:nth-child(12) > a",
+      "targets": [
+        ["css=tr:nth-child(79) > td:nth-child(12) > a", "css:finder"],
+        ["xpath=(//a[contains(text(),'Remove')])[78]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/Product/Remove?ProductId=84')]", "xpath:href"],
+        ["xpath=//tr[79]/td[12]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "14698d22-1d20-4304-ba5c-f060e3368238",
+      "comment": "",
+      "command": "webdriverChooseOkOnVisibleConfirmation",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "2f47683c-1d75-4a34-a3d4-35c86d647837",
+      "comment": "",
+      "command": "assertElementNotPresent",
+      "target": "xpath=//*[contains(text(), 'Juice')]",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "cdf8dea5-36cd-408a-8585-be4869a25888",
+    "name": "LoginTest",
+    "commands": [{
+      "id": "176ea9dc-68f1-4695-8ae1-b75f7412d72d",
+      "comment": "",
+      "command": "open",
+      "target": "/Account/Login?ReturnUrl=%2F",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "fb1d9748-ac07-4136-b7c0-0fe55a91d12c",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1004x580",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "41cafa58-e558-48fb-a4e1-3bf59391bbae",
+      "comment": "",
+      "command": "click",
+      "target": "id=Name",
+      "targets": [
+        ["id=Name", "id"],
+        ["name=Name", "name"],
+        ["css=#Name", "css:finder"],
+        ["xpath=//input[@id='Name']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e042cd0b-d548-4f10-b155-2c3b9551a6de",
+      "comment": "",
+      "command": "type",
+      "target": "id=Name",
+      "targets": [
+        ["id=Name", "id"],
+        ["name=Name", "name"],
+        ["css=#Name", "css:finder"],
+        ["xpath=//input[@id='Name']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "user"
+    }, {
+      "id": "3d726b61-173a-4340-8fd2-14f4122f0c6d",
+      "comment": "",
+      "command": "click",
+      "target": "id=Password",
+      "targets": [
+        ["id=Password", "id"],
+        ["name=Password", "name"],
+        ["css=#Password", "css:finder"],
+        ["xpath=//input[@id='Password']", "xpath:attributes"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "7c3f23d1-dd15-44ca-9f92-f907bb069d5a",
+      "comment": "",
+      "command": "type",
+      "target": "id=Password",
+      "targets": [
+        ["id=Password", "id"],
+        ["name=Password", "name"],
+        ["css=#Password", "css:finder"],
+        ["xpath=//input[@id='Password']", "xpath:attributes"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": "user"
+    }, {
+      "id": "e408b034-c162-4c34-be4a-8ffc1f7f7021",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn",
+      "targets": [
+        ["css=.btn", "css:finder"],
+        ["xpath=//input[@type='submit']", "xpath:attributes"],
+        ["xpath=//form/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "6ccc6847-18f2-4d0a-94fa-2d4fa3817639",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "xpath=//*[contains(text(), 'Home page')]",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "04d481f0-a3b1-436b-84e5-423da2383a62",
+    "name": "LogoutTest",
+    "commands": [{
+      "id": "e665b991-f245-453b-a557-0c6277897e33",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost:5000/Account/Login?ReturnUrl=%2F",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "26dd5f2b-3c90-4887-bbcf-715b443f7c04",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1004x580",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "98615fc9-e09f-4537-9bea-79805ca8cdf6",
+      "comment": "",
+      "command": "click",
+      "target": "id=Name",
+      "targets": [
+        ["id=Name", "id"],
+        ["name=Name", "name"],
+        ["css=#Name", "css:finder"],
+        ["xpath=//input[@id='Name']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "dc72a160-38b0-4f6a-a16c-5b29a3ebf9fc",
+      "comment": "",
+      "command": "type",
+      "target": "id=Name",
+      "targets": [
+        ["id=Name", "id"],
+        ["name=Name", "name"],
+        ["css=#Name", "css:finder"],
+        ["xpath=//input[@id='Name']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "user"
+    }, {
+      "id": "212f0d6b-5af6-48ed-a48d-fa809cdb1404",
+      "comment": "",
+      "command": "click",
+      "target": "id=Password",
+      "targets": [
+        ["id=Password", "id"],
+        ["name=Password", "name"],
+        ["css=#Password", "css:finder"],
+        ["xpath=//input[@id='Password']", "xpath:attributes"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f75c50b0-8633-49e9-8723-cec45232833b",
+      "comment": "",
+      "command": "type",
+      "target": "id=Password",
+      "targets": [
+        ["id=Password", "id"],
+        ["name=Password", "name"],
+        ["css=#Password", "css:finder"],
+        ["xpath=//input[@id='Password']", "xpath:attributes"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": "user"
+    }, {
+      "id": "9d48c075-c300-4ef5-9aac-384505dce5c4",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn",
+      "targets": [
+        ["css=.btn", "css:finder"],
+        ["xpath=//input[@type='submit']", "xpath:attributes"],
+        ["xpath=//form/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "eb048988-3f41-4d83-b536-0f2fd2eb8ffe",
+      "comment": "",
+      "command": "click",
+      "target": "css=.container-fluid:nth-child(3) > div:nth-child(1) > a",
+      "targets": [
+        ["css=.container-fluid:nth-child(3) > div:nth-child(1) > a", "css:finder"],
+        ["xpath=(//a[contains(text(),'All Products')])[2]", "xpath:link"],
+        ["xpath=(//a[contains(@href, '/Product')])[2]", "xpath:href"],
+        ["xpath=//div[2]/div/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "0664e796-a501-43d2-bb3b-3d991f80205d",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Logout",
+      "targets": [
+        ["linkText=Logout", "linkText"],
+        ["css=li:nth-child(4) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Logout')]", "xpath:link"],
+        ["xpath=//div[@id='bs-example-navbar-collapse-1']/ul/li[4]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/Account/Logout')]", "xpath:href"],
+        ["xpath=//li[4]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Logout')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "53bafc33-cb80-463f-ba14-bb5db8f99af1",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "xpath=//*[contains(text(), 'Login')]",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "eff7566c-ad60-4a0d-b405-a1c8a3cbf85c",
+    "name": "OpenCreatedProductTest",
+    "commands": [{
+      "id": "a575373c-1fc2-4619-bdab-f7f3c6a4dc8c",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost:5000/Product",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "50ea277e-6a97-4e2b-a996-b6bb69474b9c",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1004x580",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "aa6ba63e-8712-4882-b7d9-656b6f5814f4",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Juice",
+      "targets": [
+        ["linkText=Chang chang", "linkText"],
+        ["css=tr:nth-child(79) > td:nth-child(2) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Chang chang')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/Product/Edit?ProductId=84')]", "xpath:href"],
+        ["xpath=//tr[79]/td[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Chang chang')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "9e60402f-9414-4c23-8fcf-bf0164034bdf",
+      "comment": "",
+      "command": "verifyValue",
+      "target": "id=ProductName",
+      "targets": [],
+      "value": "Juice"
+    }, {
+      "id": "47680e91-94b8-49b7-b4c3-b191e732e907",
+      "comment": "",
+      "command": "verifyValue",
+      "target": "id=UnitPrice",
+      "targets": [],
+      "value": "20,0000"
+    }, {
+      "id": "1c781300-b6c7-42a2-8d8d-5bf1b1a9b200",
+      "comment": "",
+      "command": "verifyValue",
+      "target": "id=QuantityPerUnit",
+      "targets": [],
+      "value": "24 - 12 oz bottles"
+    }, {
+      "id": "3b2099a5-1dba-4f2f-a72d-a38e5216580c",
+      "comment": "",
+      "command": "verifyValue",
+      "target": "id=UnitsInStock",
+      "targets": [],
+      "value": "17"
+    }, {
+      "id": "b55dfbca-6a49-438d-bd74-aae69dc6df7e",
+      "comment": "",
+      "command": "verifyValue",
+      "target": "id=UnitsOnOrder",
+      "targets": [],
+      "value": "0"
+    }, {
+      "id": "6c64255b-e028-41f2-ad81-7b9ca8d59377",
+      "comment": "",
+      "command": "verifyValue",
+      "target": "id=ReorderLevel",
+      "targets": [],
+      "value": "0"
+    }, {
+      "id": "24119963-a7e4-4987-9bdc-e055ad6f501c",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "id=CategoryId",
+      "targets": [],
+      "value": "Beverages"
+    }, {
+      "id": "8d9dc984-2ec3-4731-9f34-0897046cb64c",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "id=SupplierId",
+      "targets": [],
+      "value": "Exotic Liquids"
+    }]
+  }],
+  "suites": [{
+    "id": "b60d5075-bf96-4a6c-ad85-ecbbcbcb13a8",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": []
+  }],
+  "urls": ["http://localhost:5000/", "http://localhost:5000/Product", "http://localhost:5000/Account/Login?ReturnUrl=%2F"],
+  "plugins": []
+}
