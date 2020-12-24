@@ -12,115 +12,120 @@ namespace WebDriverBasic
         private OpenQA.Selenium.IWebDriver driver;
         private WebDriverWait wait;
 
-        [OneTimeSetUp]
+        [SetUp]
         public void Setup()
         {
             driver = new ChromeDriver();
             driver.Navigate().GoToUrl("http://localhost:5000/Account/Login?ReturnUrl=%2F");
             driver.Manage().Window.Maximize();
             driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(15);
-            wait = new WebDriverWait(driver, TimeSpan.FromSeconds(15));
+            wait = new WebDriverWait(driver, TimeSpan.FromSeconds(20));
         }
 
         [Test]
-        public void Test1()
+        public void LoginTest()
         {
             driver.FindElement(By.Id("Name")).SendKeys("user");
             driver.FindElement(By.Id("Password")).SendKeys("user");
             driver.FindElement(By.CssSelector(".btn")).Click();
-            var adress = driver.Url;
             var tittle = driver.FindElement(By.TagName("h2")).Text;
-            var image = driver.FindElement(By.TagName("img")).GetAttribute("src");
-            Assert.AreEqual("http://localhost:5000/", adress);
             Assert.AreEqual("Home page", tittle);
-            Assert.AreEqual("http://localhost:5000/images/logo.jpg", image);
-
+           
         }
 
         [Test]
-        public void Test2()
+        public void ProductEditionTest()
         {
-            driver.Url = "http://localhost:5000/Product";
-            Assert.AreNotEqual("http://localhost:5000/", driver.Url);
-            Assert.AreNotEqual("http://localhost:5000/Account/Login?ReturnUrl=%2F", driver.Url);
+            driver.FindElement(By.Id("Name")).SendKeys("user");
+            driver.FindElement(By.Id("Password")).SendKeys("user");
+            driver.FindElement(By.CssSelector(".btn")).Click();
 
-            driver.FindElement(By.LinkText("Create new")).Click();
+            driver.FindElement(By.XPath("//li/a[@href=\"/Product\"]")).Click();
 
-            driver.FindElement(By.Id("ProductName")).Click();
-            driver.FindElement(By.Id("ProductName")).SendKeys("Chang chang");
+            driver.FindElement(By.XPath("//a[@href=\"/Product/Create\"]")).Click();
 
-            driver.FindElement(By.Id("CategoryId")).Click();
+            driver.FindElement(By.Id("ProductName")).SendKeys("Juce");
+           
             driver.FindElement(By.XPath("//select[@id=\"CategoryId\"]//option[@value=\"1\"]")).Click();
-
-            driver.FindElement(By.Id("SupplierId")).Click();
+                        
             driver.FindElement(By.XPath("//select[@id=\"SupplierId\"]//option[@value=\"1\"]")).Click();
-
-            driver.FindElement(By.Id("UnitPrice")).Click();
+                        
             driver.FindElement(By.Id("UnitPrice")).SendKeys("20");
-
-            driver.FindElement(By.Id("QuantityPerUnit")).Click();
+                        
             driver.FindElement(By.Id("QuantityPerUnit")).SendKeys("24 - 12 oz bottles");
-
-            driver.FindElement(By.Id("UnitsInStock")).Click();
+                       
             driver.FindElement(By.Id("UnitsInStock")).SendKeys("17");
-
-            driver.FindElement(By.Id("UnitsOnOrder")).Click();
+                       
             driver.FindElement(By.Id("UnitsOnOrder")).SendKeys("0");
-
-            driver.FindElement(By.Id("ReorderLevel")).Click();
+                        
             driver.FindElement(By.Id("ReorderLevel")).SendKeys("0");
 
             driver.FindElement(By.CssSelector(".btn")).Click();
-            Assert.AreEqual("http://localhost:5000/Product", driver.Url);
+
+            var text = driver.FindElement(By.TagName("h2")).Text;
+
+            Assert.AreEqual("All Products",text);
 
         }
 
         [Test]
-        public void Test3()
+        public void AssertionTest()
         {
-            driver.FindElement(By.LinkText("Chang chang")).Click();
+            
+            driver.FindElement(By.Id("Name")).SendKeys("user");
+            driver.FindElement(By.Id("Password")).SendKeys("user");
+            driver.FindElement(By.CssSelector(".btn")).Click();
+            driver.FindElement(By.XPath("//div/a[@href=\"/Product\"]")).Click();
 
-            var a2 = driver.FindElement(By.Id("ProductName")).GetAttribute("value");
-            Assert.AreEqual("Chang chang", a2);
+            wait.Until(SeleniumExtras.WaitHelpers.ExpectedConditions.ElementIsVisible(By.XPath("//li/a[@href=\"/Product\"]")));
 
-            var a3 = driver.FindElement(By.XPath("//select[@id=\"CategoryId\"]//option[@value=\"1\"]")).GetAttribute("value");
-            Assert.AreEqual("1", a3);
+            driver.FindElement(By.XPath("//a[@href=\"/Product/Edit?ProductId=2\"]")).Click();
 
-            var a4 = driver.FindElement(By.XPath("//select[@id=\"SupplierId\"]//option[@value=\"1\"]")).GetAttribute("value");
-            Assert.AreEqual("1", a3);
+            var productName = driver.FindElement(By.Id("ProductName")).GetAttribute("value");
+            
+            var categoryId = driver.FindElement(By.XPath("//select[@id=\"CategoryId\"]//option[@value=\"1\"]")).GetAttribute("value");
+           
+            var supplierId = driver.FindElement(By.XPath("//select[@id=\"SupplierId\"]//option[@value=\"1\"]")).GetAttribute("value");
+           
+            var unitPrice = driver.FindElement(By.Id("UnitPrice")).GetAttribute("value");
+            
+            var quantityPerUnit = driver.FindElement(By.Id("QuantityPerUnit")).GetAttribute("value");
+            
+            var unitsInStock = driver.FindElement(By.Id("UnitsInStock")).GetAttribute("value");
+            
+            var unitsOnOrder = driver.FindElement(By.Id("UnitsOnOrder")).GetAttribute("value");
+           
+            var reorderLevel = driver.FindElement(By.Id("ReorderLevel")).GetAttribute("value");
 
-            var a5 = driver.FindElement(By.Id("UnitPrice")).GetAttribute("value");
-            Assert.AreEqual("20", a5);
+            Assert.AreEqual("Chang", productName);
+            Assert.AreEqual("1", categoryId);
+            Assert.AreEqual("1", supplierId);
+            Assert.AreEqual("19,0000", unitPrice);
+            Assert.AreEqual("24 - 12 oz bottles", quantityPerUnit);
+            Assert.AreEqual("17", unitsInStock);
+            Assert.AreEqual("40", unitsOnOrder);
+            Assert.AreEqual("25", reorderLevel);
 
-            var a6 = driver.FindElement(By.Id("QuantityPerUnit")).GetAttribute("value");
-            Assert.AreEqual("24 - 12 oz bottles", a6);
-
-            var a7 = driver.FindElement(By.Id("UnitsInStock")).GetAttribute("value");
-            Assert.AreEqual("17", a7);
-
-            var a8 = driver.FindElement(By.Id("UnitsOnOrder")).GetAttribute("value");
-            Assert.AreEqual("0", a8);
-
-            var a9 = driver.FindElement(By.Id("ReorderLevel")).GetAttribute("value");
-            Assert.AreEqual("0", a9);
         }
 
         [Test]
 
-        public void Test4()
+        public void LogoutTest()
         {
-            driver.Url = "http://localhost:5000/Account/Login?ReturnUrl=%2F";
 
-            var a10 = driver.FindElement(By.XPath("//lable[@for=\"Name\"]")).GetAttribute("for");
-            Assert.AreEqual("Name", a10);
+            driver.FindElement(By.Id("Name")).SendKeys("user");
+            driver.FindElement(By.Id("Password")).SendKeys("user");
+            driver.FindElement(By.CssSelector(".btn")).Click();
 
-            var a11 = driver.FindElement(By.XPath("//lable[@for=\"Password\"]")).GetAttribute("for");
-            Assert.AreEqual("Password", a11);
+            driver.FindElement(By.XPath("//li/a[@href=\"/Account/Logout\"]")).Click();
+                             
+            var text = driver.FindElement(By.TagName("h2")).Text;
 
-
+            Assert.AreEqual("Login", text);
+                
         }
 
-        [OneTimeTearDown]
+        [TearDown]
         public void CloseDriver()
         {
             driver.Close();
